@@ -51,6 +51,9 @@
       <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
       <AdditionalOptions />
     </Link>
+    <KeilSettingsContainer>
+      <KeilCPUType>Cortex-M3</KeilCPUType>
+    </KeilSettingsContainer>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
     <ClCompile>
@@ -71,6 +74,7 @@
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\UCOSII\PORT\os_cpu_a.s" />
     <ClCompile Include="..\..\..\..\USER\main.c" />
     <ClCompile Include="..\..\..\..\USER\stm32f10x_it.c" />
     <ClCompile Include="..\..\..\..\USER\system_stm32f10x.c" />
@@ -99,7 +103,6 @@
     <ClCompile Include="..\..\..\..\UCOSII\CORE\os_task.c" />
     <ClCompile Include="..\..\..\..\UCOSII\CORE\os_time.c" />
     <ClCompile Include="..\..\..\..\UCOSII\CORE\os_tmr.c" />
-    <None Include="..\..\..\..\UCOSII\PORT\os_cpu_a.asm" />
     <ClCompile Include="..\..\..\..\UCOSII\PORT\os_cpu_c.c" />
     <ClCompile Include="..\..\..\..\CANOPEN\stm32f1_canfestival.c" />
     <ClCompile Include="..\..\..\..\CANOPEN\EwtCanAnalysis_objdict.c" />

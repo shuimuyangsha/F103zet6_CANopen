@@ -168,9 +168,6 @@
     <ClCompile Include="..\..\..\..\UCOSII\CORE\os_tmr.c">
       <Filter>Source files\UCOSII-CORE</Filter>
     </ClCompile>
-    <None Include="..\..\..\..\UCOSII\PORT\os_cpu_a.asm">
-      <Filter>Source files\UCOSII-PORT</Filter>
-    </None>
     <ClCompile Include="..\..\..\..\UCOSII\PORT\os_cpu_c.c">
       <Filter>Source files\UCOSII-PORT</Filter>
     </ClCompile>
@@ -243,5 +240,8 @@
     <None Include="MCU.xml">
       <Filter>VisualGDB settings</Filter>
     </None>
+    <ClCompile Include="..\..\..\..\UCOSII\PORT\os_cpu_a.s">
+      <Filter>Source files\UCOSII-PORT</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
