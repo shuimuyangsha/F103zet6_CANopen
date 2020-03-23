@@ -27,8 +27,8 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 extern "C" {
 #endif
 
-/* declaration of CO_Data type let us include all necessary headers
- struct struct_CO_Data can then be defined later
+/* declaration of CO_Data type let us include all necessary headers  CO-Data类型声明让我们包含所有必需的头
+ struct struct_CO_Data can then be defined later  随后可以定义struct struct_CO_Data
  */
 typedef struct struct_CO_Data CO_Data;
 
@@ -51,7 +51,7 @@ typedef struct struct_CO_Data CO_Data;
 
 /**
  * @ingroup od
- * @brief This structure contains all necessary informations to define a CANOpen node 
+ * @brief This structure contains all necessary informations to define a CANOpen node 此结构包含定义CANOpen节点所需的所有信息
  */
 struct struct_CO_Data {
 	/* Object dictionary */

@@ -14,7 +14,7 @@
 #include "mycan.h"
 
 /************************** Modul variables **********************************/
-// Store the last timer value to calculate the elapsed time
+// Store the last timer value to calculate the elapsed time 存储最后一个计时器值以计算经过的时间
 static TIMEVAL last_time_set = TIMEVAL_MAX;
 
 unsigned int TimeCNT=0;             //时间计数

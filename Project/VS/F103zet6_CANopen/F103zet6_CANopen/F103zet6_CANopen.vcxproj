@@ -42,14 +42,15 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\..\..\USER;..\..\..\..\CORE;..\..\..\..\STM32F10x_FWLib\inc;..\..\..\..\SYSTEM\delay;..\..\..\..\SYSTEM\sys;..\..\..\..\SYSTEM\usart;..\..\..\..\HARDWARE\LED;..\..\..\..\UCOSII\CONFIG;..\..\..\..\UCOSII\CORE;..\..\..\..\UCOSII\PORT;..\..\..\..\CANOPEN;..\..\..\..\CANOPEN\Include;..\..\..\..\HARDWARE\CAN;..\..\..\..\HARDWARE\TIMER;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>STM32F10X_HD;USE_STDPERIPH_DRIVER;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>STM32F10X_MD;USE_STDPERIPH_DRIVER;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions />
       <CLanguageStandard />
       <CPPLanguageStandard />
     </ClCompile>
     <Link>
-      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
       <AdditionalOptions />
+      <LinkerScript />
     </Link>
     <KeilSettingsContainer>
       <KeilCPUType>Cortex-M3</KeilCPUType>
@@ -118,7 +119,70 @@
     <ClCompile Include="..\..\..\..\CANOPEN\Src\states.c" />
     <ClCompile Include="..\..\..\..\CANOPEN\Src\sync.c" />
     <ClCompile Include="..\..\..\..\CANOPEN\Src\timer.c" />
+    <ClInclude Include="..\..\..\..\CANOPEN\EwtCanAnalysis_objdict.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\can.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\canfestival.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\config.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\data.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\dcf.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\def.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\emcy.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\lifegrd.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\lss.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\nmtMaster.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\nmtSlave.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\objacces.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\objdictdef.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\pdo.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\sdo.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\states.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\sync.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\sysdep.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\timer.h" />
+    <ClInclude Include="..\..\..\..\CANOPEN\stm32f1_canfestival.h" />
+    <ClInclude Include="..\..\..\..\CORE\core_cm3.h" />
+    <ClInclude Include="..\..\..\..\HARDWARE\CAN\mycan.h" />
+    <ClInclude Include="..\..\..\..\HARDWARE\LED\led.h" />
+    <ClInclude Include="..\..\..\..\HARDWARE\TIMER\mytimer.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\misc.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_adc.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_bkp.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_can.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_cec.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_crc.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_dac.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_dma.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_exti.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_flash.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_gpio.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_i2c.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_pwr.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_rcc.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_rtc.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_sdio.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_spi.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_tim.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_usart.h" />
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h" />
+    <ClInclude Include="..\..\..\..\SYSTEM\delay\delay.h" />
+    <ClInclude Include="..\..\..\..\SYSTEM\sys\sys.h" />
+    <ClInclude Include="..\..\..\..\UCOSII\CORE\ucos_ii.h" />
+    <ClInclude Include="..\..\..\..\USER\stm32f10x.h" />
+    <ClInclude Include="..\..\..\..\USER\stm32f10x_conf.h" />
+    <ClInclude Include="..\..\..\..\USER\stm32f10x_it.h" />
+    <ClInclude Include="..\..\..\..\USER\system_stm32f10x.h" />
+    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\builtins_ia32.h" />
+    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\gcc_compat.h" />
+    <ClInclude Include="G:\MDK\ARM\ARMCC\include\stdint.h" />
+    <ClInclude Include="G:\MDK\ARM\ARMCC\include\stdlib.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h" />
+    <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\STM32F103C8T6最小系统资料包\4.参考资料\stm32f103中文资料.pdf" />
     <None Include="mcu.props" />
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\applicfg.h" />
+    <ClInclude Include="..\..\..\..\SYSTEM\usart\usart.h" />
     <ClInclude Include="..\..\..\..\UCOSII\PORT\os_cpu.h" />
     <ClInclude Include="..\..\..\..\UCOSII\CONFIG\includes.h" />
     <ClInclude Include="..\..\..\..\UCOSII\CONFIG\os_cfg.h" />
@@ -127,5 +191,6 @@
     <None Include="F103zet6_CANopen-Debug.vgdbsettings" />
     <None Include="F103zet6_CANopen-Release.vgdbsettings" />
     <None Include="MCU.xml" />
+    <ClInclude Include="RTE/RTE_Components.h" />
   </ItemGroup>
 </Project>
