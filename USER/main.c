@@ -58,7 +58,7 @@ void led1_task(void *pdata);
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);//设置中断优先级分组为组2：2位抢占优先级，2位响应优先级
 	delay_init();	    //延时函数初始化	  
 	LED_Init();		  	//初始化与LED连接的硬件接口
-     uart_init(9600);
+    uart_init(115200);
     TIM3_Int_Init(100-1, 72-1);   //1Mhz的计数频率，计数10次为100us, 定时器3每隔100us中断一次 
 	OSInit();   
  	OSTaskCreate(start_task,(void *)0,(OS_STK *)&START_TASK_STK[START_STK_SIZE-1],START_TASK_PRIO );//创建起始任务
@@ -100,6 +100,12 @@ void led0_task(void *pdata)
 //    }
 //    
     Message can_msg;
+	//Message can_msg = {
+	//					0x181,	/**< message's ID */
+	//					0,		/**< remote transmission request. (0 if not rtr message, 1 if rtr message) */
+	//					8,		/**< message's length (0 to 8) */
+	//					{1,2,3,4,5,6,7,8}, /**< message's datas */
+	//					};
      
 	while(1)
 	{
@@ -108,6 +114,7 @@ void led0_task(void *pdata)
 
         Can_Receive_Msg((can_message_t *)&can_msg);     //接收消息
         canDispatch(&EwtCanAnalysis_Data, &can_msg);    //处理消息
+		//OSTimeDlyHMSM(0, 0, 0, 200);
 	};
 }
 
