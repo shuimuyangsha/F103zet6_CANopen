@@ -109,7 +109,7 @@ void led0_task(void *pdata)
      
 	while(1)
 	{
-//        Can_Send_Msg(&msg);
+        //Can_Send_Msg(&can_msg);
 //        msg.cob_id++;
 
         Can_Receive_Msg((can_message_t *)&can_msg);     //接收消息
