@@ -27,7 +27,7 @@
     <AllDependencies>
       <ProjectDependency>
         <RelativePath>..\..\..\..\USER\UCOSII-1.uvprojx</RelativePath>
-        <Timestamp>131541767578934938</Timestamp>
+        <Timestamp>132388370625550734</Timestamp>
       </ProjectDependency>
     </AllDependencies>
     <RootDirectory>
@@ -79,9 +79,6 @@
           <Files>
             <VirtualFileSnapshot>
               <RelativePath>..\..\..\..\CORE\core_cm3.c</RelativePath>
-            </VirtualFileSnapshot>
-            <VirtualFileSnapshot>
-              <RelativePath>..\..\..\..\CORE\startup_stm32f10x_hd.s</RelativePath>
             </VirtualFileSnapshot>
           </Files>
         </VirtualDirectorySnapshot>
@@ -149,9 +146,6 @@
         <VirtualDirectorySnapshot>
           <Name>UCOSII-PORT</Name>
           <Files>
-            <VirtualFileSnapshot>
-              <RelativePath>..\..\..\..\UCOSII\PORT\os_cpu_a.asm</RelativePath>
-            </VirtualFileSnapshot>
             <VirtualFileSnapshot>
               <RelativePath>..\..\..\..\UCOSII\PORT\os_cpu_c.c</RelativePath>
             </VirtualFileSnapshot>
@@ -231,24 +225,26 @@
     </RootDirectory>
     <Configurations>
       <ImportedConfiguration>
+        <IsStaticLibrary>false</IsStaticLibrary>
         <Settings>
           <IncludeDirectories>
-            <string>E:\VS_GDB\ARM\testF103\F103zet6_CANopen\USER</string>
-            <string>E:\VS_GDB\ARM\testF103\F103zet6_CANopen\CORE</string>
-            <string>E:\VS_GDB\ARM\testF103\F103zet6_CANopen\STM32F10x_FWLib\inc</string>
-            <string>E:\VS_GDB\ARM\testF103\F103zet6_CANopen\SYSTEM\delay</string>
-            <string>E:\VS_GDB\ARM\testF103\F103zet6_CANopen\SYSTEM\sys</string>
-            <string>E:\VS_GDB\ARM\testF103\F103zet6_CANopen\SYSTEM\usart</string>
-            <string>E:\VS_GDB\ARM\testF103\F103zet6_CANopen\HARDWARE\LED</string>
-            <string>E:\VS_GDB\ARM\testF103\F103zet6_CANopen\UCOSII\CONFIG</string>
-            <string>E:\VS_GDB\ARM\testF103\F103zet6_CANopen\UCOSII\CORE</string>
-            <string>E:\VS_GDB\ARM\testF103\F103zet6_CANopen\UCOSII\PORT</string>
-            <string>E:\VS_GDB\ARM\testF103\F103zet6_CANopen\CANOPEN</string>
-            <string>E:\VS_GDB\ARM\testF103\F103zet6_CANopen\CANOPEN\Include</string>
-            <string>E:\VS_GDB\ARM\testF103\F103zet6_CANopen\HARDWARE\CAN</string>
-            <string>E:\VS_GDB\ARM\testF103\F103zet6_CANopen\HARDWARE\TIMER</string>
+            <string>E:\Code\test1\USER</string>
+            <string>E:\Code\test1\CORE</string>
+            <string>E:\Code\test1\STM32F10x_FWLib\inc</string>
+            <string>E:\Code\test1\SYSTEM\delay</string>
+            <string>E:\Code\test1\SYSTEM\sys</string>
+            <string>E:\Code\test1\SYSTEM\usart</string>
+            <string>E:\Code\test1\HARDWARE\LED</string>
+            <string>E:\Code\test1\UCOSII\CONFIG</string>
+            <string>E:\Code\test1\UCOSII\CORE</string>
+            <string>E:\Code\test1\UCOSII\PORT</string>
+            <string>E:\Code\test1\CANOPEN</string>
+            <string>E:\Code\test1\CANOPEN\Include</string>
+            <string>E:\Code\test1\HARDWARE\CAN</string>
+            <string>E:\Code\test1\HARDWARE\TIMER</string>
           </IncludeDirectories>
           <PreprocessorMacros>
+            <string>$$com.sysprogs.bspoptions.primary_memory$$_layout</string>
             <string>STM32F10X_HD</string>
             <string>USE_STDPERIPH_DRIVER</string>
           </PreprocessorMacros>
