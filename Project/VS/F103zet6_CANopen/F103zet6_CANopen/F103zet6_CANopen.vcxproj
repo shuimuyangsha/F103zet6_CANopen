@@ -179,7 +179,9 @@
     <ClInclude Include="G:\MDK\ARM\ARMCC\include\stdint.h" />
     <ClInclude Include="G:\MDK\ARM\ARMCC\include\stdlib.h" />
     <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\STM32F103C8T6最小系统资料包\4.参考资料\stm32f103中文资料.pdf" />
-    <None Include="..\..\..\..\..\..\..\工作资料\我的图书库\专业理论图书\现场总线CANopen设计与应用.pdf" />
+    <None Include="..\..\..\..\..\..\..\工作资料\我的图书库\专业理论图书\通信类书籍\CANopen轻松入门.pdf" />
+    <None Include="..\..\..\..\..\..\..\工作资料\我的图书库\专业理论图书\通信类书籍\CAN总线嵌入式开发  从入门到实战.pdf" />
+    <None Include="..\..\..\..\..\..\..\工作资料\我的图书库\专业理论图书\通信类书籍\现场总线CANopen设计与应用.pdf" />
     <None Include="..\..\..\..\CANopen数据库.vsdx" />
     <None Include="..\..\..\..\manual-2.03（F103zet6_CANopen使用说明）.pdf" />
     <None Include="mcu.props" />
