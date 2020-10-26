@@ -75,6 +75,7 @@
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\CORE\startup_stm32f10x_hd.s" />
     <ClCompile Include="..\..\..\..\UCOSII\PORT\os_cpu_a.s" />
     <ClCompile Include="..\..\..\..\USER\main.c" />
     <ClCompile Include="..\..\..\..\USER\stm32f10x_it.c" />
@@ -177,7 +178,6 @@
     <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\gcc_compat.h" />
     <ClInclude Include="G:\MDK\ARM\ARMCC\include\stdint.h" />
     <ClInclude Include="G:\MDK\ARM\ARMCC\include\stdlib.h" />
-    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h" />
     <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\STM32F103C8T6最小系统资料包\4.参考资料\stm32f103中文资料.pdf" />
     <None Include="..\..\..\..\..\..\..\工作资料\我的图书库\专业理论图书\现场总线CANopen设计与应用.pdf" />
     <None Include="..\..\..\..\CANopen数据库.vsdx" />
@@ -189,7 +189,6 @@
     <ClInclude Include="..\..\..\..\UCOSII\CONFIG\includes.h" />
     <ClInclude Include="..\..\..\..\UCOSII\CONFIG\os_cfg.h" />
     <None Include="..\..\..\..\README.TXT" />
-    <ClInclude Include="$(BSP_ROOT)\Device\Include\stm32f10x.h" />
     <None Include="F103zet6_CANopen-Debug.vgdbsettings" />
     <None Include="F103zet6_CANopen-Release.vgdbsettings" />
     <None Include="MCU.xml" />

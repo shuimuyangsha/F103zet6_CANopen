@@ -225,9 +225,6 @@
     <None Include="..\..\..\..\README.TXT">
       <Filter>Header files\README</Filter>
     </None>
-    <ClInclude Include="$(BSP_ROOT)\Device\Include\stm32f10x.h">
-      <Filter>Header files\Device-specific files</Filter>
-    </ClInclude>
     <None Include="F103zet6_CANopen-Debug.vgdbsettings">
       <Filter>VisualGDB settings</Filter>
     </None>
@@ -243,87 +240,15 @@
     <ClInclude Include="RTE/RTE_Components.h">
       <Filter>Header files</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\..\..\CORE\startup_stm32f10x_hd.s">
+      <Filter>Source files\CORE</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\SYSTEM\usart\usart.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\applicfg.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
     <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\builtins_ia32.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\can.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\canfestival.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\config.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\CORE\core_cm3.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\data.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\dcf.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\def.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\SYSTEM\delay\delay.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\emcy.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\EwtCanAnalysis_objdict.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
     <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\gcc_compat.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\HARDWARE\LED\led.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\lifegrd.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\lss.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\misc.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\HARDWARE\CAN\mycan.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\HARDWARE\TIMER\mytimer.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\nmtMaster.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\nmtSlave.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\objacces.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\objdictdef.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\pdo.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\sdo.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\states.h">
       <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="G:\MDK\ARM\ARMCC\include\stdint.h">
@@ -332,104 +257,176 @@
     <ClInclude Include="G:\MDK\ARM\ARMCC\include\stdlib.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\stm32f1_canfestival.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\USER\stm32f10x.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_adc.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_bkp.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_can.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_cec.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\USER\stm32f10x_conf.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_crc.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_dac.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_dma.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_exti.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_flash.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_gpio.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_i2c.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\USER\stm32f10x_it.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_pwr.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_rcc.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_rtc.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_sdio.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_spi.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_tim.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_usart.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\FWLIB</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\sync.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="..\..\..\..\HARDWARE\LED\led.h">
+      <Filter>Header files\HARDWARE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\HARDWARE\CAN\mycan.h">
+      <Filter>Header files\HARDWARE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\HARDWARE\TIMER\mytimer.h">
+      <Filter>Header files\HARDWARE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SYSTEM\delay\delay.h">
+      <Filter>Header files\SYSTEM</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\SYSTEM\sys\sys.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\SYSTEM</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\sysdep.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="..\..\..\..\SYSTEM\usart\usart.h">
+      <Filter>Header files\SYSTEM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\USER\stm32f10x_it.h">
+      <Filter>Header files\USER</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\USER\system_stm32f10x.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\USER</Filter>
     </ClInclude>
-    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="..\..\..\..\USER\stm32f10x.h">
+      <Filter>Header files\USER</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\CANOPEN\Include\timer.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="..\..\..\..\USER\stm32f10x_conf.h">
+      <Filter>Header files\USER</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\UCOSII\CORE\ucos_ii.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\UCOSII-CORE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CORE\core_cm3.h">
+      <Filter>Header files\CORE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\STM32F10x_FWLib\inc\misc.h">
+      <Filter>Header files\FWLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\EwtCanAnalysis_objdict.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\stm32f1_canfestival.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\applicfg.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\can.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\canfestival.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\config.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\data.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\dcf.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\def.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\emcy.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\lifegrd.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\lss.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\nmtMaster.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\nmtSlave.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\objacces.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\objdictdef.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\pdo.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\sdo.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\states.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\sync.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\sysdep.h">
+      <Filter>Header files\CANOPEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\CANOPEN\Include\timer.h">
+      <Filter>Header files\CANOPEN</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
